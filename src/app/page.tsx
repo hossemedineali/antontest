@@ -141,7 +141,7 @@ export default function Home() {
           className="pb-[10px]  active: "
         >
           <RenderItemWithCheckBox
-            title="Select all pages"
+            title="All pages"
             checked={state.every((item) => item.checked)}
             handleClicked={() => {
               //check or uncheck all pages
@@ -161,7 +161,7 @@ export default function Home() {
           style={{
             borderBottom: "0.7px solid #CDCDCD",
           }}
-          className="mt-[10px] mb-[20px]"
+          className="mt-[10px] mb-[20px] pb-[10px]"
         >
           {state.map((item, index) => {
             return (
@@ -195,7 +195,7 @@ export default function Home() {
 
 const Button = () => {
   return (
-    <button className="h-10 max-w-[340px] w-full text-sm text-center rounded bg-[#FFCE22] hover:bg-[#FFD84D] active:bg-[#FFCE22] text-black ">
+    <button className="h-10 mb-2.5 max-w-[340px] w-full text-sm text-center rounded bg-[#FFCE22] hover:bg-[#FFD84D] active:bg-[#FFCE22] text-black ">
       Done
     </button>
   );
